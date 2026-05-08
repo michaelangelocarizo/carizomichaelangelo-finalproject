@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Shop – WebSys 1 Final Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="store-header">
+  <h1>The Shop</h1>
+  <button class="cart-btn" id="cartToggle">
+    <span>🛒 Cart</span>
+    <span class="badge" id="cartBadge">0</span>
+  </button>
+</header>
+
+<div class="layout">
+  <section class="products-section">
+    <p class="section-label">All Products</p>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <aside class="cart-section">
+    <div class="cart-header">
+      <p class="section-label" style="margin-bottom:0">Your Cart</p>
+      <button class="clear-btn" id="clearCart">Clear all</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="total-row">
+        <span class="total-label">Total</span>
+        <span class="total-price" id="cartTotal">₱0.00</span>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
